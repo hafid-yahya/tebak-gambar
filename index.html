@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tebak Gambar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Tebak Gambar</h1>
+
+      <div class="image-container">
+        <img src="img/tebak-gambar.jpg" alt="Tebak Gambar" id="tebakGambar" />
+      </div>
+
+      <div class="form-container">
+        <input type="text" id="jawaban" placeholder="Masukkan jawaban Anda" />
+        <button onclick="cekJawaban()">Kirim</button>
+      </div>
+
+      <div id="runText" class="run-text"></div>
+    </div>
+
+    <audio id="myAudio">
+      <source src="audio/music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
